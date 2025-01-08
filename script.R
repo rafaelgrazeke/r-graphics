@@ -110,10 +110,6 @@ ggplot(data, aes(x = d, y = h)) + geom_hex()
 # 30. Scatter plot with smooth and custom theme
 ggplot(data, aes(x = d, y = h)) + geom_point() + geom_smooth(method = "lm") + theme_minimal()
 
-library(ggplot2)
-library(plotly)
-library(ggExtra)
-
 # 31. A heatmap showing the density of points in the d and h space
 ggplot(data, aes(x = d, y = h)) + geom_bin2d() + theme_minimal()
 
